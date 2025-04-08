@@ -35,7 +35,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_qeyws")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 10.0
 }]
 
@@ -44,13 +44,14 @@ radius = 5.09902
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
+collision_layer = 2
 script = ExtResource("1_n5tgh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_7xord")
-autoplay = "default"
-frame_progress = 0.957782
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
