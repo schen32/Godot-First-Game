@@ -42,7 +42,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_48q1q"]
 radius = 5.09902
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Knight" type="CharacterBody2D"]
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_n5tgh")
